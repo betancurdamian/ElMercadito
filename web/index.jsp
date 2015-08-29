@@ -4,10 +4,6 @@
     Author     : Ariel
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
         <jsp:include page="jsp/encabezado.jsp"></jsp:include>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/validarCampos.js"></script>
@@ -28,7 +24,7 @@ document.login.addEventListener('submit', validarFormulario);
 
           <div id="login-form">
 
-            <h3>Iniciar SesiÃ³n</h3>
+            <h3>Iniciar Sesión</h3>
 
             <fieldset>
 
@@ -40,11 +36,7 @@ document.login.addEventListener('submit', validarFormulario);
 
                 <input type="submit" value="Ingresar" name="ingresar" id="ingresar">
 
-                <footer class="clearfix">
-
-                  <p><span class="info">?</span><a href="#">Registrarse</a></p>
-
-                </footer>
+                
 
               </form>
 

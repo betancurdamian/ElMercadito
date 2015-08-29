@@ -4,10 +4,7 @@
     Author     : Ariel
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
+
         <jsp:include page="encabezado.jsp"></jsp:include>
         <title>Menu Administrador</title>
     </head>

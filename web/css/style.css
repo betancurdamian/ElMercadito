@@ -47,16 +47,6 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: ' ';
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
 
 .container {
   left: 50%;
@@ -108,7 +98,8 @@ input[type="submit"] {
 }
 
 #login-form input[type="email"],
-#login-form input[type="password"] {
+#login-form input[type="password"],
+#login-form input[type="text"]{
   border: 1px solid #dcdcdc;
   padding: 12px 10px;
   width: 100%;
@@ -131,24 +122,10 @@ input[type="submit"] {
   font-weight: bold;
   margin-top: 20px;
   padding: 12px 20px;
+  width: 100%;
 }
 
 #login-form input[type="submit"]:hover {
   background: #198d98;
 }
 
-#login-form footer {
-  font-size: 12px;
-  margin-top: 16px;
-}
-
-.info {
-  background: #e5e5e5;
-  border-radius: 50%;
-  display: inline-block;
-  height: 20px;
-  line-height: 20px;
-  margin: 0 10px 0 0;
-  text-align: center;
-  width: 20px;
-}
