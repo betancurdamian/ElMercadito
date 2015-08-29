@@ -4,12 +4,15 @@
     Author     : Ariel
 --%>
 
+        
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>        
+        <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
         <script type="text/javascript" src="js/validarCampos.js"></script>
         
         <title>Login</title>
@@ -40,11 +43,7 @@ document.login.addEventListener('submit', validarFormulario);
 
                 <input type="submit" value="Ingresar" name="ingresar" id="ingresar">
 
-                <footer class="clearfix">
-
-                  <p><span class="info">?</span><a href="#">Registrarse</a></p>
-
-                </footer>
+                
 
               </form>
 
