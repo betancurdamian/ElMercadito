@@ -8,4 +8,5 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
