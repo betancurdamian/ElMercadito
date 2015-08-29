@@ -4,14 +4,13 @@
     Author     : Ariel
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <jsp:include page="head.jsp"></jsp:include>        
         <title>Registro</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div class="containerGeneral">
+        <jsp:include page="nav.jsp"></jsp:include>
+        <h1>mmm</h1>
+        </div>
     </body>
 </html>

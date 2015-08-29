@@ -4,8 +4,15 @@
     Author     : Ariel
 --%>
 
-        <jsp:include page="jsp/encabezado.jsp"></jsp:include>
+        
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>        
+        <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
         <script type="text/javascript" src="js/validarCampos.js"></script>
         
         <title>Login</title>
@@ -24,7 +31,7 @@ document.login.addEventListener('submit', validarFormulario);
 
           <div id="login-form">
 
-            <h3>Iniciar Sesión</h3>
+            <h3>Iniciar SesiÃ³n</h3>
 
             <fieldset>
 
