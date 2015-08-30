@@ -26,13 +26,13 @@
         
         <title>Login</title>
         
-        <script>
+        <script type="text/javascript">
             $(document).ready(function() {                           
                 $("#ValidarUsuario").submit(function() {
                    $.post("ValidarUsuario", $("#ValidarUsuario").serialize(), function(data) {
                        perfil = jQuery.trim(data);
-                       if(perfil =="1") document.location.href = "../page/menuCajero";
-                       else if(perfil == "2") ocument.location.href = "";
+                       if(perfil =="1") document.location.href = "page/newjsp.jsp";
+                       else if(perfil == "2") document.location.href = "";
                        else $("#mensaje-ingreso").html("<h1>Usuario o clave no valido</h1>");
                    });
                    return false;
