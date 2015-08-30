@@ -105,3 +105,11 @@ input[type="submit"] {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+#mensaje-ingreso { 
+    color: #fff;
+    background-color: orangered;
+    position:fixed;
+    text-align: center;
+    width: 300px;
+} 

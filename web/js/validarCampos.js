@@ -1,7 +1,7 @@
 function validarFormulario(evObject) {
 evObject.preventDefault();
 var todoCorrecto = true;
-var formulario = document.login;
+var formulario = document.ValidarUsuario;
 for (var i=0; i<formulario.length; i++) {
                 if(formulario[i].type =='text') {
                                if (formulario[i].value == null){
