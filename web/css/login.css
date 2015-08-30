@@ -107,6 +107,9 @@ input[type="submit"] {
 }
 
 #mensaje-ingreso { 
-position:fixed;
-text-align: center;
+    color: #fff;
+    background-color: orangered;
+    position:fixed;
+    text-align: center;
+    width: 300px;
 } 

@@ -31,7 +31,7 @@
                        perfil = jQuery.trim(data);
                        if(perfil =="1") document.location.href = "page/newjsp.jsp";
                        else if(perfil == "2") document.location.href = "";
-                       else $("#mensaje-ingreso").html("<h4>Usuario o Clave no Valido</h4>"); 
+                       else $("#mensaje-ingreso").html("Usuario o Clave invalida"); 
                    });
                    return false;
                 });
@@ -62,7 +62,15 @@
                 
 
             </fieldset>
-            <div id="mensaje-ingreso"></div>
+            
+                
+
+            <div id="mensaje-ingreso">
+                
+            </div>   
+                
+
+             
           </div> 
 
         </div>
