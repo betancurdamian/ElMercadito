@@ -12,10 +12,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import database.*;
+import javax.servlet.annotation.WebServlet;
 /**
  *
  * @author Ariel
  */
+@WebServlet (name = "ValidarUsuario", urlPatterns = {"/ValidarUsuario"})
 public class ValidarUsuario extends HttpServlet {
 
     /**
@@ -36,8 +38,8 @@ public class ValidarUsuario extends HttpServlet {
             BaseDatos datos = new BaseDatos();
             
             //Tomar los valores del JSP
-            String usuario = request.getParameter("nombre");
-            String password = request.getParameter("password");
+            String usuario = request.getParameter("usuario");
+            String password = request.getParameter("clave");
             
             //validamos usuario
             

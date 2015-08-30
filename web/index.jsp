@@ -14,46 +14,51 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/login.css">
         <script type="text/javascript" src="js/validarCampos.js"></script>
+        <script type="text/javascript" src="js/js-jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/js-jquery-ui-1.8.21.custom.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                //para colocar efecto a los botones
+                $('input:submit').button();
+            });
+        </script>
         
         <title>Login</title>
         
-
-  
-    
-    <script type="text/javascript">
-        window.onload = function () {
-        document.login.addEventListener('submit', validarFormulario);
-        } 
-    </script>                
-        
+        <script>
+            $(document).ready(function() {                           
+                $("#ValidarUsuario").submit(function() {
+                   $.post("ValidarUsuario", $("#ValidarUsuario").serialize(), function(data) {
+                       perfil = jQuery.trim(data);
+                       if(perfil =="1") document.location.href = "../page/menuCajero";
+                       else if(perfil == "2") ocument.location.href = "";
+                       else $("#mensaje-ingreso").html("<h1>Usuario o clave no valido</h1>");
+                   });
+                   return false;
+                });
+            });
+        </script>              
     </head>
     <body>
-        
-        <div class="container">
-
-          <div id="login-form">
-
-            <h3>Iniciar Sesión</h3>
-
-            <fieldset>
-
-                <form id="login" name="login" action="ValidarUsuario" method="POST">
-
-                <input type="text" required value="Tipo Usuario" onBlur="if(this.value=='')this.value='Tipo Usuario'" onFocus="if(this.value=='Tipo Usuario')this.value='' " name="nombre" id="nombre" > 
-
-                <input type="password" required value="Password" onBlur="if(this.value==''){this.value='Password'}" onFocus="if(this.value=='Password'){this.value=''}" name="password" id="password"> 
-
-                <input type="submit" value="Ingresar" name="ingresar" id="ingresar">
-
-                
-
-              </form>
-                <div id="mensaje-ingreso"></div>
-
-            </fieldset>
-
-          </div> 
-
-        </div>
+        <h1>Ingresar al Sistema</h1>
+        <form name="ValidarUsuario" id="ValidarUsuario" action="ValidarUsuario" method="POST">
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td>Usuario: </td>
+                        <td><input type="text" name="usuario" id="usuario" value="" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td>Clave: </td>
+                        <td><input type="password" name="clave" id="clave" value="" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Ingresar" name="ingresar" id="ingresar"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div id="mensaje-ingreso"></div>
     </body>
 </html>
