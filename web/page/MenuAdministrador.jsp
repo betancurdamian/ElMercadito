@@ -7,8 +7,11 @@
 
         <jsp:include page="encabezado.jsp"></jsp:include>
         <title>Menu Administrador</title>
-    </head>
+    
+          
+
+</head>
     <body>
-        <h1>Hello World!</h1>
+       
     </body>
 </html>

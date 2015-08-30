@@ -11,11 +11,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import database.*;
+import javax.servlet.annotation.WebServlet;
 /**
  *
  * @author Ariel
  */
+@WebServlet (name = "ValidarUsuario", urlPatterns = {"/ValidarUsuario"})
 public class ValidarUsuario extends HttpServlet {
 
     /**
@@ -30,18 +32,25 @@ public class ValidarUsuario extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ValidarUsuario</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ValidarUsuario at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+        PrintWriter out = response.getWriter();
+        try {
+            //Creamos objeto de Conexion a la Base de Datos
+            BaseDatos datos = new BaseDatos();
+            
+            //Tomar los valores del JSP
+            String usuario = request.getParameter("usuario");
+            String password = request.getParameter("clave");
+            
+            //validamos usuario
+            
+            out.println(datos.validarUsuario(usuario, password));
+            
+            
+            //cerramos conexion con la base de datos
+            datos.cerrarConexion();
+        }finally{
+            out.close();
+            }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
