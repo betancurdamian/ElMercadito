@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -38,23 +38,23 @@ public class BaseDatos {
         }
     }
     
-    public boolean validarUsuario(String usuario, String clave){
+    public String validarUsuario(String usuario, String clave){
         try {
-            String sql = "select (1) from usuarios where "
+            String sql = "select idPerfil from usuarios where "
                     + "idUsuario ='"+usuario+"' and "
                     + "clave ='"+clave+"'";
             
             Statement st = cnn.createStatement();
             ResultSet rs = st.executeQuery(sql);
             if (rs.next()) {
-                return true; 
+                return rs.getString("idPerfil");
             }else{
-                return false;
+                return "NOK";
             }
             
         } catch (SQLException ex) {
             Logger.getLogger(BaseDatos.class.getName()).log(Level.SEVERE, null, ex);
-            return false;
+            return "NOK";
         }
     }
 }

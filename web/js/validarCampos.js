@@ -4,8 +4,23 @@ var todoCorrecto = true;
 var formulario = document.login;
 for (var i=0; i<formulario.length; i++) {
                 if(formulario[i].type =='text') {
-                               if (formulario[i].value == null || formulario[i].value.length == 0 || /^\s*$/.test(formulario[i].value)){
-                               alert (formulario[i].name+ ' no puede estar vacío o contener sólo espacios en blanco');
+                               if (formulario[i].value == null){
+                               alert (formulario[i].name+ ' El campo usuario esta vacio');
+                               todoCorrecto=false;
+                               }
+                               
+                               if (formulario[i].value.length == 0){
+                               alert (formulario[i].name+ ' No ha ingresado un usuario');
+                               todoCorrecto=false;
+                               }
+                               
+                               if (/^\s*$/.test(formulario[i].value)){
+                               alert (formulario[i].name+ ' no puede contener sólo espacios en blanco');
+                               todoCorrecto=false;
+                               }
+                               
+                               if (formulario[i].value ==  'Tipo Usuario'){
+                               alert ('el usuario no puede ser "Tipo Usuario"');
                                todoCorrecto=false;
                                }
                 }

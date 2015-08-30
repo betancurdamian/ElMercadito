@@ -17,12 +17,14 @@
         
         <title>Login</title>
         
-<script type="text/javascript">
-window.onload = function () {
-document.login.addEventListener('submit', validarFormulario);
-} 
-</script>
-        
+
+  
+    
+    <script type="text/javascript">
+        window.onload = function () {
+        document.login.addEventListener('submit', validarFormulario);
+        } 
+    </script>                
         
     </head>
     <body>
@@ -35,9 +37,9 @@ document.login.addEventListener('submit', validarFormulario);
 
             <fieldset>
 
-                <form id="login" name="login" action="ValidarUsuario" method="post">
+                <form id="login" name="login" action="ValidarUsuario" method="POST">
 
-                <input type="email" required value="Email Usuario" onBlur="if(this.value=='')this.value='Email Usuario'" onFocus="if(this.value=='Email Usuario')this.value='' " name="email" id="email" > 
+                <input type="text" required value="Tipo Usuario" onBlur="if(this.value=='')this.value='Tipo Usuario'" onFocus="if(this.value=='Tipo Usuario')this.value='' " name="nombre" id="nombre" > 
 
                 <input type="password" required value="Password" onBlur="if(this.value==''){this.value='Password'}" onFocus="if(this.value=='Password'){this.value=''}" name="password" id="password"> 
 
@@ -46,6 +48,7 @@ document.login.addEventListener('submit', validarFormulario);
                 
 
               </form>
+                <div id="mensaje-ingreso"></div>
 
             </fieldset>
 
