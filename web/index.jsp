@@ -50,7 +50,7 @@
 
                 <form name="ValidarUsuario" id="ValidarUsuario" action="ValidarUsuario" method="POST">
 
-                <input type="text" required value="Tipo Usuario" onBlur="if(this.value=='')this.value='Tipo Usuario'" onFocus="if(this.value=='Tipo Usuario')this.value='' " name="usuario" id="usuario" /> 
+                <input type="text" required value="Usuario" onBlur="if(this.value=='')this.value='Usuario'" onFocus="if(this.value=='Usuario')this.value='' " name="usuario" id="usuario" /> 
 
                 <input type="password" required value="Password" onBlur="if(this.value==''){this.value='Password'}" onFocus="if(this.value=='Password'){this.value=''}" name="clave" id="clave" /> 
 
