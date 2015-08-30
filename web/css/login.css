@@ -105,3 +105,8 @@ input[type="submit"] {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+#mensaje-ingreso { 
+position:fixed;
+text-align: center;
+} 
