@@ -10,6 +10,7 @@
     <head>        
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" type="text/css" href="../css/menu.css">
+        <link rel="stylesheet" type="text/css" href="../css/footer.css">
         <link rel="shortcut icon" type="image/x-icon" href="../image/favicon.ico">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
