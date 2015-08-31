@@ -5,9 +5,8 @@
 --%>
 
     <jsp:include page="structPage/head.jsp"></jsp:include>
-        <title>JSP Page</title>
-    <jsp:include page="structPage/header.jsp"></jsp:include>
-    <body>
+        <title>Administrador</title>
+    <jsp:include page="structPage/header.jsp"></jsp:include>    
     <jsp:include page="structPage/nav.jsp"></jsp:include>    
         <h1>Hello World!</h1>
     <jsp:include page="structPage/footer.jsp"></jsp:include>
