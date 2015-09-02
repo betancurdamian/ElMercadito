@@ -9,7 +9,9 @@
                 <div class="navbar navbar-inverse frontend-menu" role="navigation">
                   <div class="container">
                     <div class="navbar-header">      
-                      <a class="navbar-brand" href="#"><img alt="El Mercadito" src="../image/logo.png"></a>
+                      <a class="navbar-brand" href="#">
+                          <img alt="El Mercadito" src="../../image/logo.png">
+                      </a>
                     </div>
                     <div class="navbar-collapse collapse">
                       <ul class="nav navbar-nav navbar-left">
