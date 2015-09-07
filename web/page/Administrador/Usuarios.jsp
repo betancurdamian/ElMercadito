@@ -1,6 +1,6 @@
 <%-- 
-    Document   : newjsp
-    Created on : 30/08/2015, 10:22:53
+    Document   : Usuarios
+    Created on : 05/09/2015, 00:20:52
     Author     : Ariel
 --%>
 
@@ -8,6 +8,5 @@
         <title>Administrador</title>
     <jsp:include page="structPage/headers/header.jsp"></jsp:include>    
     <jsp:include page="structPage/navs/nav.jsp"></jsp:include>                   
-    
-    
+    <jsp:include page="structPage/forms/UsuariosForm.jsp"></jsp:include> 
     <jsp:include page="structPage/footer.jsp"></jsp:include>

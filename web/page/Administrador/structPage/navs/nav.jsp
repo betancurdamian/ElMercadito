@@ -42,13 +42,13 @@
               <a href="#">Sucursales</a>
             </li>
             <li>
-              <a href="#">Navigation</a>
+              <a href="Usuarios.jsp">Usuarios</a>
             </li>
             <li>
-              <a href="#">Navigation</a>
+              <a href="#">Productos</a>
             </li>
             <li>
-              <a href="#">Navigation</a>
+              <a href="#">Clientes</a>
             </li>   
         </ol>
     </div>
