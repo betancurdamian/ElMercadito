@@ -6,8 +6,10 @@
 
     <jsp:include page="structPage/head.jsp"></jsp:include>
         <title>Administrador</title>
+            </head>
+        <body>
     <jsp:include page="structPage/headers/header.jsp"></jsp:include>    
     <jsp:include page="structPage/navs/nav.jsp"></jsp:include>                   
-    
+        
     
     <jsp:include page="structPage/footer.jsp"></jsp:include>

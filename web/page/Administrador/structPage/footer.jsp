@@ -8,7 +8,7 @@
   <div class="row">
 
     <div class="col-sm-6">
-      <h3>SGM</h3>
+      <h4>SGM</h4>
       <p class="lead">
         Sistema de Gestión Mercadito 
       </p>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="col-sm-3">
-      <h3>Se el primero en Saberlo</h3>
+      <h4>Se el primero en Saberlo</h4>
       <div class="copy">
         <p>
           <a class="btn btn-facebook" data-no-turbolink="true" href="https://www.facebook.com/da.ariel" rel="nofollow"><span class='icon-facebook'></span> Betancur Damián Ariel</a>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="col-sm-3">
-      <h3>Mira el Codigo Fuente en GitHub</h3>
+      <h4>Mira el Codigo Fuente en GitHub</h4>
       <div class="copy">
         <p>
           <a href="https://github.com/betancurdamian/ElMercadito" class="contact">betancurdamian</a>

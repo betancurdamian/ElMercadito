@@ -3,8 +3,7 @@
     Created on : 29/08/2015, 12:42:56
     Author     : Ariel
 --%>
-    </head>
-        <body>
+
             <header>
                 <div class="navbar navbar-inverse frontend-menu" role="navigation">
                   <div class="container">
@@ -15,8 +14,10 @@
                     </div>
                     <div class="navbar-collapse collapse">
                       <ul class="nav navbar-nav navbar-left">
-                        <li><a href="#">Usuarios</a></li>
-                        <li><a href="#">Sucursales</a></li>        
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="Usuarios.jsp">Usuarios</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Clientes</a></li>        
                       </ul>
                       <ul class="nav navbar-nav navbar-right">
                             <li role="sign_out">
