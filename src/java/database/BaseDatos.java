@@ -12,6 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import model.Usuario;
 
 /**
  *
@@ -55,6 +56,29 @@ public class BaseDatos {
         } catch (SQLException ex) {
             Logger.getLogger(BaseDatos.class.getName()).log(Level.SEVERE, null, ex);
             return "NOK";
+        }
+    }
+    
+    public Usuario getUsuario (String idUsuario){
+        try {
+            Usuario miUsuario = null;
+            String sql = "select * from usuarios where "
+                    + "idUsuario ='"+idUsuario+ "'";
+            Statement st = cnn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            if (rs.next()) {
+                miUsuario = new Usuario(rs.getString("idUsuario"), 
+                                        rs.getString("nombres"),
+                                        rs.getString("apellidos"),
+                                        rs.getString("clave"),                                        
+                                        rs.getInt("idPerfil"),
+                                        rs.getString("foto"));
+            }
+            
+            return miUsuario;
+        } catch (SQLException ex) {
+            Logger.getLogger(BaseDatos.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
         }
     }
 }

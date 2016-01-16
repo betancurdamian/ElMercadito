@@ -22,7 +22,7 @@
         <div class="col-sm-8">
           <div class="page-header">
             <h1 class="small-xs">
-              Administrador
+              Empleado
               <small>
                 Mercadito
               </small>
