@@ -7,7 +7,11 @@
     <servlet-mapping>
         <servlet-name>ValidarUsuario</servlet-name>
         <url-pattern>/ValidarUsuario</url-pattern>
+    
     </servlet-mapping>
+    
+    
+    
     <session-config>
         <session-timeout>
             30
