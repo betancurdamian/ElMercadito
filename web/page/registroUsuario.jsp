@@ -10,11 +10,7 @@
         
         <title>Registrar Usuario</title>
         
-<script type="text/javascript">
-window.onload = function () {
-document.login.addEventListener('submit', validarFormulario);
-} 
-</script>
+
         
         
     </head>
