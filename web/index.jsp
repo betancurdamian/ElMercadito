@@ -24,7 +24,7 @@
                 $("#ValidarUsuario").submit(function() {
                    $.post("ValidarUsuario", $("#ValidarUsuario").serialize(), function(data) {
                        perfil = jQuery.trim(data);
-                       if(perfil =="1") document.location.href = "page/administrador.jsp";
+                       if(perfil =="1") document.location.href = "page/Administrador/inicio.jsp";
                        else if(perfil == "2") document.location.href = "";
                        else $("#mensaje-ingreso").html("Usuario o Clave invalida"); 
                    });
