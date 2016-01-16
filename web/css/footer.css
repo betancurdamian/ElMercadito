@@ -5617,7 +5617,7 @@ th.visible-print, td.visible-print {
 	margin: 10px 0
 }
 .header-bg-full-bleed {
-	min-height: 100px;
+	min-height: 10px;
 	position: relative
 }
 .header-bg-full-bleed h1, .header-bg-full-bleed h2, .header-bg-full-bleed h3 {
@@ -7625,14 +7625,13 @@ section.fixed {
 	position: fixed;
 	display: block;
 	width: 100%;
-	background: black;
+	
 	z-index: -2
 }
 section.full-bleed {
 	position: relative;
 	display: block;
-	width: 100%;
-	background: black;
+	width: 100%;	
 	z-index: 0
 }
 .block {
